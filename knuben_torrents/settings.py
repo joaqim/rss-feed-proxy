@@ -1,4 +1,4 @@
-# Scrapy settings for knuben_torrents project
+# Scrapy settings for knaben_torrents project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,10 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "knuben_torrents"
+BOT_NAME = "knaben_torrents"
 
-SPIDER_MODULES = ["knuben_torrents.spiders"]
-NEWSPIDER_MODULE = "knuben_torrents.spiders"
+SPIDER_MODULES = ["knaben_torrents.spiders"]
+NEWSPIDER_MODULE = "knaben_torrents.spiders"
 
 # Enable fake user agent provider
 FAKEUSERAGENT_PROVIDERS = [
@@ -51,13 +51,13 @@ TELNETCONSOLE_ENABLED = False
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 # SPIDER_MIDDLEWARES = {
-#    'knuben_torrents.middlewares.KnubenTorrentsReleasesSpiderMiddleware': 543,
+#    'knaben_torrents.middlewares.KnabenTorrentsReleasesSpiderMiddleware': 543,
 # }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-   'knuben_torrents.middlewares.KnubenTorrentsReleasesDownloaderMiddleware': 543,
+   'knaben_torrents.middlewares.KnabenTorrentsReleasesDownloaderMiddleware': 543,
 }
 
 # Enable or disable extensions
@@ -69,11 +69,11 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 # ITEM_PIPELINES = {
-#    'knuben_torrents.pipelines.KnubenTorrentsReleasesPipeline': 300,
+#    'knaben_torrents.pipelines.KnabenTorrentsReleasesPipeline': 300,
 # }
 
 FEED_EXPORTERS = {
-    "rss": "knuben_torrents.exporters.KnubenTorrentsReleasesRSSExporter"
+    "rss": "knaben_torrents.exporters.KnabenTorrentsReleasesRSSExporter"
 }
 
 FEEDS = {

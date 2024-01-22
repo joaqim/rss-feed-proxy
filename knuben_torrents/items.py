@@ -6,7 +6,7 @@
 import scrapy
 
 
-class KnubenTorrentsReleasesItem(scrapy.Item):
+class KnabenTorrentsReleasesItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass

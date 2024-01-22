@@ -3,7 +3,7 @@ from datetime import datetime
 from scrapy.exporters import XmlItemExporter
 
 
-class KnubenTorrentsReleasesRSSExporter(XmlItemExporter):
+class KnabenTorrentsReleasesRSSExporter(XmlItemExporter):
     def __init__(self, *args, **kwargs):
         kwargs["root_element"] = "rss"
         kwargs["item_element"] = "item"
@@ -11,13 +11,13 @@ class KnubenTorrentsReleasesRSSExporter(XmlItemExporter):
         self.item_element = "item"
 
         now = datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S %z")
-        self.title = "Knuben RSS"
-        self.link = "https://rss.knuben.eu/1080///hidexxx"
-        self.description = "Knuben RSS feed"
+        self.title = "Knaben RSS"
+        self.link = "https://rss.knaben.eu/1080///hidexxx"
+        self.description = "Knaben RSS feed"
         self.language = "en-us"
         self.build_date = now
 
-        super(KnubenTorrentsReleasesRSSExporter, self).__init__(*args, **kwargs)
+        super(KnabenTorrentsReleasesRSSExporter, self).__init__(*args, **kwargs)
 
     def start_exporting(self):
         self.xg.startDocument()

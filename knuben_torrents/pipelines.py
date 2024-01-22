@@ -8,6 +8,6 @@
 from itemadapter import ItemAdapter
 
 
-class KnubenTorrentsReleasesPipeline:
+class KnabenTorrentsReleasesPipeline:
     def process_item(self, item, spider):
         return item
